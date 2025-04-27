@@ -1,9 +1,7 @@
 # LOOKER STUDIO DASHBOARD WITH HOSPITALITY KPIs
-It contains all the scripts needed to create a static, yet fully updated Looker Studio (LS) dashboard. The dashboard can be shared with stakeholders at specific time intervals, such as monthly. The KPIs are selected based on both the machine learning outputs from the Booking Cancellations Prediction project and domain research.
+This project implements an ETL workflow, where data is extracted from local sources, transformed using Python scripts, and prepared for direct loading into Looker Studio. The process automates data cleaning, feature engineering, and KPI calculation, ensuring efficient dashboard updates with minimal manual intervention.
 
 As this project complements the BookingCancellationsPredictions project, both workflows are explained in detail in Full_Project_Explained.pdf.
-
-All processes before the cleaned data upload onto Looker Studio are fully automated.
 
 Since the case study focuses on a static yet regularly updated KPI dashboard, the calculated fields needed in LS are prepared outside of it using Python. This approach minimizes dashboard update times, as LS only needs to reconnect to the refreshed data sources after each new data upload. Additionally, the dashboard structure remains stable thanks to proper data source management.
 

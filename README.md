@@ -10,7 +10,8 @@ Since the case study focuses on a static yet regularly updated KPI dashboard, th
 In summary, although the process is not 100% automated, the only human action required after the initial dashboard setup is to upload the new data into Looker Studio and quickly manage the data source reconnections to ensure the dashboard refreshes correctly. The person responsible for this task does not need advanced knowledge of dashboard coding, they only need to follow simple and repeatable steps in Looker Studio’s data management settings. After completing these easy tasks, the static yet fully updated KPI dashboard is ready to be shared with stakeholders.
 
 # SHARED DASHBOARD LINK
-Below is my KPI dashboard:
+Below is my KPI dashboard:  
+
 [Hospitality KPIs](https://lookerstudio.google.com/reporting/8ee13cf9-54e6-41ac-823e-af0706cec66c)
 
 

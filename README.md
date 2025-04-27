@@ -9,6 +9,9 @@ Since my case study is about a static but fully updated KPI dashboard, the calcu
 
 All in all, even if the process is not 100% automated, the only human action needed after the first dashboard creation is to upload the fresh data into LS and quickly manage the reconnections, making sure that the data refreshes correctly. Specifically, the person who works with LS does not need to know low-level dashboard coding. They only need to follow simple, repeated steps in LS data management. After these easy tasks, the static but fully updated KPI dashboard is ready to be shared with stakeholders.
 
+# SHARED DASHBOARD LINK
+[Hospitality KPIs](https://lookerstudio.google.com/reporting/8ee13cf9-54e6-41ac-823e-af0706cec66c)
+
 # DATA COLLECTION
 https://www.kaggle.com/datasets/mojtaba142/hotel-booking
 

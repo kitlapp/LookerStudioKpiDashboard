@@ -1,5 +1,8 @@
 # Import libraries for data manipulation and numerical operations
+import os
 
+from dotenv import load_dotenv
+load_dotenv()
 # Import SQLAlchemy to enable interaction with PostgreSQL databases
 from sqlalchemy import create_engine
 
@@ -10,8 +13,15 @@ import numpy as np
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 # =====================================================================================================================
+# FETCH DATA FROM THE DATABASE
+username = os.getenv('postgresuser')
+password = os.getenv('password')
+host = os.getenv('host')
+port = os.getenv('port')
+db_name = os.getenv('db_name')
+
 # Set up the connection to the local PostgreSQL database
-engine = create_engine('postgresql://postgres:root@localhost:5432/hotel_booking')
+engine = create_engine(f'postgresql://{username}:{password}@{host}:{port}/{db_name}')
 
 # Fetch data from the 'hotel_booking' table
 query = "SELECT * FROM dashboard_data"

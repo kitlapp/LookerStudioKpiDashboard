@@ -1,7 +1,10 @@
 # PREPROCESSING FOR is_canceled TARGET
+import os
 
 # IMPORT LIBRARIES
-# Import SQLAlchemy to manage database connections (used later for storing/loading data)
+from dotenv import load_dotenv
+load_dotenv()
+# Import SQLAlchemy to manage database connections
 from sqlalchemy import create_engine
 
 # Import datetime to display the time of creation of the cleaned dataset
@@ -37,8 +40,15 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 pd.options.display.max_columns = 999
 # =====================================================================================================================
 # FETCH DATA FROM THE DATABASE
+
+username = os.getenv('postgresuser')
+password = os.getenv('password')
+host = os.getenv('host')
+port = os.getenv('port')
+db_name = os.getenv('db_name')
+
 # Set up the connection to the local PostgreSQL database
-engine = create_engine('postgresql://postgres:root@localhost:5432/hotel_booking')
+engine = create_engine(f'postgresql://{username}:{password}@{host}:{port}/{db_name}')
 
 # Fetch data from the 'hotel_booking' table
 query = "SELECT * FROM hotel_booking"
@@ -454,7 +464,7 @@ df20[boolean_cols] = df20[boolean_cols].astype(int)
 # =====================================================================================================================
 # EXPORT CLEANED FILES
 # Establish a connection to the PostgreSQL database using SQLAlchemy engine
-engine = create_engine('postgresql://postgres:root@localhost:5432/hotel_booking')
+engine = create_engine(f'postgresql://{username}:{password}@{host}:{port}/{db_name}')
 
 # Upload the 'df20' dataframe (Logistic Regression and Random Forest dataset) to the PostgreSQL database.
 # If the table "logreg_rf_data" already exists, it will be replaced with the new data.

@@ -1,5 +1,5 @@
 # LOOKER STUDIO DASHBOARD WITH HOSPITALITY KPIs
-This project implements an ETL workflow, where data is extracted from local sources, transformed using Python scripts, and prepared for direct loading into Looker Studio. The process automates data cleaning, feature engineering, and KPI calculation, ensuring efficient dashboard updates with minimal manual intervention.
+This project implements an ETL workflow, where data is extracted from local sources, transformed using Python scripts and prepared for direct loading into Looker Studio. The process automates data cleaning, feature engineering, and KPI calculation, ensuring efficient dashboard updates with minimal manual intervention.
 
 As this project complements the BookingCancellationsPredictions project, both workflows are explained in detail in Full_Project_Explained.pdf.
 
@@ -10,7 +10,7 @@ In summary, although the process is not 100% automated, the only human action re
 # SHARED DASHBOARD LINK
 Below is my KPI dashboard:  
 
-[Hospitality KPIs](https://lookerstudio.google.com/reporting/8ee13cf9-54e6-41ac-823e-af0706cec66c)
+[Looker Studio KPI Dashboard](https://lookerstudio.google.com/reporting/8ee13cf9-54e6-41ac-823e-af0706cec66c)
 
 
 # DATA COLLECTION
